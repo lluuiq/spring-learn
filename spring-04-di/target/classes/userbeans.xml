@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- p命名空间注入，可以注入简单的属性值 p:property的缩写 -->
+    <bean id="user" class="com.lu.pojo.User" p:name="lluuiq" p:age="18"/>
+    <bean id="user2" class="com.lu.pojo.User" c:name="lluuiq" c:age="18"/>
+</beans>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 有参构造，通过index索引来赋值 -->
+    <!--<bean id="User" class="com.lu.pojo.User">-->
+    <!--    <constructor-arg index="0" value="lluuiq-index有参构造"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="User" class="com.lu.pojo.User">-->
+    <!--    <constructor-arg type="java.lang.String" value="lluuiq-type有参构造"/>-->
+    <!--</bean>-->
+
+
+    <bean id="User" class="com.lu.pojo.User">
+        <constructor-arg name="name" value="lluuiq-直接通过参数名来构造"/>
+    </bean>
+
+    <alias name="User" alias="abc"/>
+
+    <!--
+        id：bean的唯一标识符，相当于对象名
+        class：bean对象所对应的实体类（包名.类）
+        name：也是别名
+    -->
+    <bean id="userT" class="com.lu.pojo.UserT" name="u2,user2 userTwo">
+        <property name="name" value="第二个user"/>
+    </bean>
+</beans>

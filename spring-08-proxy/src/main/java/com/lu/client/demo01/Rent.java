@@ -1,0 +1,6 @@
+package com.lu.client.demo01;
+
+// 租房
+public interface Rent {
+    public void rent();
+}

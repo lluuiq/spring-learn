@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!--
+    使用spring-mybatis后，该配置文件仅需要配置别名与设置即可
+    数据源交给 spring-dao.xml来实现
+-->
+<configuration>
+    <typeAliases>
+        <package name="com.lu.pojo"/>
+    </typeAliases>
+</configuration>
